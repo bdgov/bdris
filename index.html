@@ -1,22 +1,60 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-    <title>UBRN - INFORMATION SEARCHER</title>
     <meta charset="UTF-8">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    UBRN INFORMATION SEARCHER | MR OGGY BHAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="http://86.106.183.197/~bestseba/Xhuuuuuuuu/assets/css/style.css">
+    
 </head>
 <body>
-    <iframe src="http://ns1.serverreseller.net/~bestseba/api/ubrn/" allowfullscreen></iframe>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-id-card"></i> জন্মনিবন্ধন তথ্য অনুসন্ধান</h1>
+            <p> BDRIS ডাটাবেস থেকে তথ্য অনুসন্ধানের জন্য প্রফেশনাল সিস্টেম</p>
+        </div>
+        
+        <div class="search-section">
+            <form method="GET" action="http://86.106.183.197/~bestseba/Xhuuuuuuuu/api/bdris.php" class="search-form">
+                <div class="input-group">
+                    <label for="ubrn">জন্মনিবন্ধন নম্বর লিখুন</label>
+                    <input type="text" id="ubrn" name="ubrn" placeholder="2008XXXXXXXXXXXX" required
+                           value="">
+                </div>
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i> অনুসন্ধান
+                </button>
+            </form>
+            
+                    </div>
+        
+                
+            </div>
+    
+    <footer class="no-print">
+        <div class="copyright">
+            <i class="far fa-copyright"></i>
+            <span>2025 MR OGGY BHAI. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        // Function to handle printing
+        function printDocument() {
+            window.print();
+        }
+        
+        // Add event listener for print button
+        document.addEventListener('DOMContentLoaded', function() {
+            const printBtn = document.querySelector('.print-btn');
+            if (printBtn) {
+                printBtn.addEventListener('click', printDocument);
+            }
+        });
+    </sc
 </body>
 </html>
